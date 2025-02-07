@@ -124,3 +124,11 @@
           title: 'Simple Store Location',
         });
       }
+      // Toggle Mobile Menu
+function toggleMenu() {
+  const nav = document.querySelector('.collapsible-nav');
+  const icon = document.querySelector('.menu-icon');
+  nav.classList.toggle('active');
+  icon.classList.toggle('active'); // Add animation to the hamburger icon
+
+}

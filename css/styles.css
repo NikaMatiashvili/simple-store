@@ -318,4 +318,189 @@
     color: #e67e22;
     transform: scale(1.1);
   }
-  
+  /* Responsive Styles */
+@media (max-width: 768px) {
+  /* Header Adjustments */
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  .logo {
+    margin-left: 0; /* Reset logo alignment */
+    font-size: 1.2rem; /* Smaller font size for mobile */
+  }
+  .centered-nav {
+    position: static; /* Remove absolute positioning */
+    transform: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    text-align: left;
+  }
+  .centered-nav a {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  /* Hero Section */
+  .hero h1 {
+    font-size: 2.5rem; /* Smaller font size for mobile */
+  }
+  .hero p {
+    font-size: 1.2rem;
+  }
+  .btn-hero {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  /* Sections */
+  section {
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h2::after {
+    width: 30px;
+    height: 2px;
+  }
+
+  /* Categories and Product Grid */
+  .categories,
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  .category-card,
+  .product-card {
+    padding: 0.75rem;
+  }
+  .category-image {
+    height: 100px;
+  }
+  .product-image {
+    height: 150px;
+  }
+
+  /* Why Choose Us */
+  .why-us {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .why-us-item {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  /* Contact Form */
+  .contact-form {
+    max-width: 100%;
+  }
+  .contact-form input,
+  .contact-form button {
+    font-size: 0.9rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 1.5rem 0;
+  }
+  footer p {
+    font-size: 0.9rem;
+  }
+
+  /* Hamburger Menu Icon */
+.menu-icon {
+  display: none;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1001;
+}
+
+.menu-icon span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.menu-icon span:nth-child(1) {
+  top: 0;
+}
+
+.menu-icon span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu-icon span:nth-child(3) {
+  bottom: 0;
+}
+
+.menu-icon.active span:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.menu-icon.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.active span:nth-child(3) {
+  bottom: 50%;
+  transform: rotate(-45deg);
+}
+
+/* Collapsible Navigation Menu */
+.collapsible-nav {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: #34495e;
+  padding: 1rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.collapsible-nav.active {
+  display: flex;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Reset link styles */
+.collapsible-nav a {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+}
+
+.collapsible-nav a:focus,
+.collapsible-nav a:active {
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+/* Show hamburger menu on mobile */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+}
+
+}
