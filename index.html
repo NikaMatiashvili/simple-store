@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Store - Ultimate Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">Simple Store</div>
+      <nav class="centered-nav">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Simple Store</h1>
+      <p>Your one-stop shop for quality products at great prices.</p>
+      <a href="#products" class="btn-hero">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Gradient Section: Ready to Shop -->
+  <section class="gradient-section">
+    <div class="container">
+      <h2>Ready to Shop?</h2>
+      <p>Discover our wide range of products and enjoy the best shopping experience ever.</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Featured Categories -->
+  <section id="categories" class="fade-in">
+    <div class="container">
+      <h2>Shop by Category</h2>
+      <div class="categories">
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1549037173-e3b717902c57?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Men's Clothing" class="category-image">
+          <h3>Men's Clothing</h3>
+        </div>
+        <div class="category-card">
+          <img src="https://plus.unsplash.com/premium_photo-1675186049366-64a655f8f537?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Women's Clothing" class="category-image">
+          <h3>Women's Clothing</h3>
+        </div>
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1612902457652-33aff0a641fa?q=80&w=1527&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Accessories" class="category-image">
+          <h3>Accessories</h3>
+        </div>
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1553808373-92b0bcc3af65?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGZvb3R3ZWFyfGVufDB8fDB8fHww" alt="Footwear" class="category-image">
+          <h3>FootwearS</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gradient Section: Why Choose Us -->
+  <section class="gradient-section">
+    <div class="container">
+      <h2>Why Choose Us?</h2>
+      <div class="why-us">
+        <div class="why-us-item">
+          <i class="fas fa-truck"></i>
+          <h3>Fast Delivery</h3>
+          <p>We ensure your orders are delivered quickly and reliably.</p>
+        </div>
+        <div class="why-us-item">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Secure Payments</h3>
+          <p>Your transactions are safe and secure with us.</p>
+        </div>
+        <div class="why-us-item">
+          <i class="fas fa-headset"></i>
+          <h3>24/7 Support</h3>
+          <p>Our dedicated team is here to help you anytime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section id="products" class="fade-in">
+    <div class="container">
+      <h2>Featured Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=1305&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product 1" class="product-image">
+          <div class="product-info">
+            <h3 class="product-title">Knitwear</h3>
+            <p class="product-price">$19.95</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoZXN8ZW58MHx8MHx8fDA%3D" alt="Product 2" class="product-image">
+          <div class="product-info">
+            <h3 class="product-title">Jacket</h3>
+            <p class="product-price">$34.95</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2hpcnR8ZW58MHx8MHx8fDA%3D" alt="Product 3" class="product-image">
+          <div class="product-info">
+            <h3 class="product-title">Shirt</h3>
+            <p class="product-price">$24.95</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gradient Section: Experience Luxury Shopping -->
+  <section class="gradient-section">
+    <div class="container">
+      <h2>Experience Luxury Shopping</h2>
+      <p>We bring you the best products from around the world.</p>
+      <a href="#products" class="btn">Explore Now</a>
+    </div>
+  </section>
+
+
+  <!-- Google Maps Section -->
+  <section id="map" class="fade-in">
+    <div class="container">
+      <h2>Find Us on the Map</h2>
+      <div id="google-map" style="height: 400px; width: 100%; margin-top: 2rem;"></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="fade-in">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form class="contact-form" action="mailto:info@simplestore.com" method="post" enctype="text/plain">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <button type="submit">Send Help Notice</button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2023 Simple Store. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
